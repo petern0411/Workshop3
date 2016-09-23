@@ -14,7 +14,7 @@ any other head content must come *after* these tags -->
 </head>
 <body>
 <!-- Our Facebook layout will go here. -->
-<nav class="navbar navbar-default">NAVBAR
+<nav class="navbar navbar-default navbar-fixed-top">NAVBAR
 	</nav>
 	<!-- The container for our grid. The outermost grid must be placed within
 a `container` or `container-fluid` class. (Meaning: If you nest a grid
@@ -30,6 +30,8 @@ Left Sidebar
 </div>
 <!-- Main feed: A cell that spans 7 columns -->
 <div class="col-md-7">Main Feed
+  <div style="height: 99999px;">
+  </div>
 </div>
 <!-- Right sidebar: A cell that spans 3 columns -->
 <div class="col-md-3">
@@ -39,6 +41,11 @@ Right Sidebar
 </div>
 <div class="chat-popup">
 CHAT MENU
+</div>
+<div class="col-md-7">
+Main Feed
+<div style="height: 99999px;">
+</div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>

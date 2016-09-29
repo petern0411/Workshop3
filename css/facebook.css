@@ -43,19 +43,111 @@ Yeah, it's weird. */
     padding-top: 5px;
 }
 
-.green{
-	color:green;
+.green {
+    color: green;
 }
+
 .fb-status-update hr {
-margin-top: 5px;
-margin-bottom: 5px;
-/* The color of `hr` is set by its top border color.
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* The color of `hr` is set by its top border color.
 Yeah, it's weird. */
-border-top: 1px solid lightgray;
+    border-top: 1px solid lightgray;
 }
+
 .fb-status-update .list-inline {
-margin-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 .fb-status-update .panel-body {
-padding-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.fb-trending ul.nav a {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.fb-trending .media {
+    margin-top: 5px;
+}
+
+.fb-trending {
+	margin-bottom:5px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.body {
+    padding-top: 60px;
+    /* I figured out the background color using Chrome's Inspect tool. */
+    background-color: #e9eaed;
+}
+
+
+/* Fix background, text, and border of right sidebar. */
+
+.fb-right-sidebar {
+    /* Gray text. This is the same color Facebook uses. */
+    color: #9197a3;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+
+/* Make the birthday icon look more Facebookey.
+It would be better practice to add a custom class to the birthday widget, but
+I'm doing this to make the workshop a little faster. */
+
+.fb-right-sidebar .glyphicon-gift {
+    color: white;
+    background-color: red;
+    /* Sets padding at 2px on all sides at once */
+    padding: 2px;
+    /* Sets the border radius to 2px for each corner. */
+    border-radius: 2px;
+}
+
+.fb-trending > .row:first-child {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    /* Padding is the whitespace between the content of fb-trending and its
+border */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* Margin is the whitespace between the border and adjacent elements */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Customize the look of non-active pills in trending widget */
+
+.fb-trending > .row:first-child li a {
+    /* Tells the element to inherit the color from its parent. Remember that
+we set 'color' for the entire right sidebar to gray! */
+    color: inherit;
+}
+
+
+/* Customize the look of active pills in trending widget */
+
+.fb-trending > .row:first-child li.active a {
+    background-color: transparent;
+    /* Same color as the lightning bolt */
+    color: #5990ff;
+}
+
+.fb-trending-title {
+    line-height: 24px;
+}
+
+
+/* Apply a light-blue color to flash icons *only* in the content
+section of the trending widget. */
+
+.fb-trending > .row:nth-child(2) .glyphicon-flash {
+    color: #5990ff;
 }
